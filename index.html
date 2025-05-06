@@ -2,166 +2,205 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Harshitha's Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <!-- Font Awesome CDN -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harshitha's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
 
 <body>
-  <!-- Navigation Bar -->
-  <nav>
-    <div class="logo">Harshitha <span>Dhanpal</span></div>
-    <ul>
-      <li><a href="#home" class="active">Home</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+    <nav>
+        <div class="logo">Harshitha <span>Dhanpal</span></div>
+        <ul>
+            <li><a href="#home" class="active"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
+            <li><a href="#experience"><i class="fas fa-briefcase"></i> Experience</a></li>
+            <li><a href="#projects"><i class="fas fa-folder-open"></i> Projects</a></li>
+            <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+    </nav>
 
-  <!-- Hero Section -->
-  <section class="hero" id="home">
-    <div class="content">
-        <h1>Hello, Myself</h1>
-        <h2>DHANPAL HARSHITHA</h2>
-        <p>And I'm a <span id="typing-text">STUDENT</span></p>
-      <p>I'm a passionate Computer Science student exploring Machine Learning and Data Science.</p>
-      <div class="social-icons">
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-      </div>
-      <div class="buttons">
-        <a href="resume.pdf" class="btn" target="_blank">Donwload cv</a>
-        <a href="#contact" class="btn btn-outline">Contact</a>
-    </div>
-    
-    </div>
-    <div class="image-container">
-      <img src="2k23 tr.jpg" alt="Profile Picture" />
-    </div>
-  </section>
+    <section class="hero-section" id="home">
+        <div class="hero-content">
+            <div class="profile-image">
+                <img src="2k23 tr.jpg" alt="Profile Picture" class="profile-pic" />
+            </div>
+            <h1 class="hero-name">
+                <span>Harshitha</span> <span class="gradient-text">Dhanpal</span>
+            </h1>
+            <p class="hero-roles">
+                <span class="role-green">Exploring Data Patterns</span> |
+                <span class="role-purple"> Engineering Smart Solutions </span> |
+                Solving Real-World Problems
+            </p>
+            <div class="hero-buttons">
+                <a href="resume.pdf" class="btn resume"><i class="fas fa-download"></i> Resume</a>
+                <a href="https://github.com/Harshitha547" class="btn github"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/harshitha-dhanpal-896987286" class="btn linkedin"><i
+                        class="fab fa-linkedin-in"></i> LinkedIn</a>
 
-  <section class="education-zigzag" id="education">
-    <h2>Education</h2>
-    <div class="timeline-zigzag">
-  
-      <div class="container left">
-        <div class="content">
-          <h3>SSC – Class X</h3>
-          <p>Gowtham Model School</p>
-          <span>2020 | CGPA: 10.0</span>
+            </div>
         </div>
-      </div>
-  
-      <div class="container right">
-        <div class="content">
-          <h3>Intermediate – Science Stream</h3>
-          <p>Sri Gayatri Junior College</p>
-          <span>2020–2022 | Percentage: 97%</span>
+    </section>
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2><i class="fas fa-user"></i> About Me</h2>
+            <div class="about-cards">
+                <div class="about-card">
+                    <h3><i class="fas fa-id-card"></i> Profile</h3>
+                    <p>Embarking on my academic and professional journey, I have always been captivated by the potential
+                        of data in solving real-world problems. Currently pursuing a Bachelor of Technology in Data Science
+                        at Anurag University (2022–2026), I am passionate about leveraging data-driven solutions through
+                        Python projects, web development, and continuous learning via certifications like NPTEL.</p>
+                </div>
+                <div class="about-card">
+                    <h3><i class="fas fa-code"></i> Developer</h3>
+                    <p>
+
+                        Web developers design, build, and maintain websites and web applications using technologies like
+                        HTML, CSS, JavaScript, and backend tools. They ensure functionality, responsiveness, and user
+                        experience across devices.
+                        .</p>
+                </div>
+
+            </div>
         </div>
-      </div>
-  
-      <div class="container left">
-        <div class="content">
-          <h3>B.Tech – Computer Science Engineering (Data Science)</h3>
-          <p>Anurag University</p>
-          <span>2022–2026 | CGPA: 8.61</span>
-        </div>
-      </div>
-  
-    </div>
-  </section>
-  
-    
-
- <!-- Experience Section -->
-<section class="experience" id="experience">
-    <h2>Experience</h2>
-    <div class="experience-cards">
-        <div class="exp-card active">
-            <i class="fas fa-laptop-code"></i>
-            <h3>Tech Hack #3</h3>
-            <p>Participated in solving real-world tech challenges with a collaborative team.</p>
-        </div>
-        <div class="exp-card">
-            <i class="fas fa-rocket"></i>
-            <h3>TechXcelerate</h3>
-            <p>Built innovative solutions and competed with top developers across domains.</p>
-        </div>
-    </div>
-</section>
+        <section class="education-zigzag" id="education">
+            <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+            <div class="timeline-zigzag">
+                <div class="container left">
+                    <div class="content">
+                        <h3>SSC – Class X</h3>
+                        <p>Gowtham Model School</p>
+                        <span>2020 | CGPA: 10.0</span>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content">
+                        <h3>Intermediate – Science Stream</h3>
+                        <p>Sri Gayatri Junior College</p>
+                        <span>2020–2022 | Percentage: 97%</span>
+                    </div>
+                </div>
+                <div class="container left">
+                    <div class="content">
+                        <h3>B.Tech – Computer Science Engineering (Data Science)</h3>
+                        <p>Anurag University</p>
+                        <span>2022–2026 | CGPA: 8.61</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
-  <!-- Projects Section -->
-  <section id="projects" class="projects">
-    <h2>My Projects</h2>
-    <div class="project-cards">
-      <div class="project-card">
-        <h3>Portfolio Website</h3>
-        <p>Personal website built using HTML, CSS, and JavaScript to showcase skills and projects.</p>
-      </div>
-      <div class="project-card">
-        <h3>Job salary Analysis Dashboard</h3>
-        <p>Created an interactive Tableau dashboard analyzing global job salary trends by role, location, and experience level.</p>
-      </div>
-      <div class="project-card">
-        <h3>Ad Spotting – Finding Best Markets to Advertise In
-        </h3>
-        <p>Developed an R-based analysis to identify the most effective markets for targeted advertising using demographic and sales data.</p>
-      </div>
-    </div>
-  </section>
+        <section class="experience" id="experience">
+            <h2><i class="fas fa-briefcase"></i> Experience</h2>
+            <div class="experience-cards">
+                <div class="exp-card active">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Tech Hack #3</h3>
+                    <p>Participated in solving real-world tech challenges with a collaborative team.</p>
+                </div>
+                <div class="exp-card">
+                    <i class="fas fa-rocket"></i>
+                    <h3>TechXcelerate</h3>
+                    <p>Built innovative solutions and competed with top developers across domains.</p>
+                </div>
+            </div>
+        </section>
 
-  <!-- Contact Section -->
-<section class="contact " id="contact">
-    <h2>Contact <span class="highlight">Me</span></h2>
-    <form class="contact-form">
-      <div class="form-group">
-        <label for="name">Full Name:</label>
-        <input type="text" id="name" placeholder="Enter your full name" required>
-      </div>
-  
-      <div class="form-group">
-        <label for="email">Email Address:</label>
-        <input type="email" id="email" placeholder="Enter your email" required>
-      </div>
-  
-      <div class="form-group">
-        <label for="phone">Phone Number:</label>
-        <input type="tel" id="phone" placeholder="Enter your phone number">
-      </div>
-  
-      <div class="form-group">
-        <label for="subject">Email Subject:</label>
-        <input type="text" id="subject" placeholder="Enter email subject">
-      </div>
-  
-      <div class="form-group">
-        <label for="message">Your Message:</label>
-        <textarea id="message" placeholder="Write your message here..." rows="5" required></textarea>
-      </div>
-  
-      <button type="submit" class="btn">Send Message</button>
-    </form>
-  </section>
-  
 
-  <button id="topBtn" onclick="scrollToTop()">↑</button>
-  <script src="script.js"></script>
-  <!-- Footer -->
-  <footer>
-    <div class="social-footer">
-      <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
-      <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
-      <a href="https://google.com"><i class="fab fa-google"></i></a>
-      <a href="https://linkedin.com"><i class="fab fa-linkedin-in"></i></a>
-    </div>
-    <p style="color: white;">&copy; 2025 Harshitha Dhanpal. All rights reserved.</p>
-  </footer>
-  
+        <section class="skills" id="skills">
+            <h2><i class="fas fa-code-branch"></i> Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3><i class="fas fa-terminal"></i> Languages</h3>
+                    <span class="skill-tag">C</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">HTML</span>
+                    <span class="skill-tag">CSS</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">SQL</span>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-wrench"></i> Tools</h3>
+                    <span class="skill-tag">MS Office tools</span>
+                    <span class="skill-tag">Tableau</span>
+                    <span class="skill-tag">Windows</span>
+                    <span class="skill-tag">PowerBI</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2><i class="fas fa-folder-open"></i> My Projects</h2>
+            <div class="project-cards">
+                <div class="project-card">
+                    <h3>Portfolio Website</h3>
+                    <p>Personal website built using HTML, CSS, and JavaScript to showcase skills and projects.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Job salary Analysis Dashboard</h3>
+                    <p>Created an interactive Tableau dashboard analyzing global job salary trends by role, location, and
+                        experience level.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Ad Spotting – Finding Best Markets to Advertise In
+                    </h3>
+                    <p>Developed an R-based analysis to identify the most effective markets for targeted advertising
+                        using demographic and sales data.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="contact " id="contact">
+            <h2><i class="fas fa-envelope"></i> Contact <span class="highlight">Me</span></h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" placeholder="Enter your phone number">
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Email Subject:</label>
+                    <input type="text" id="subject" placeholder="Enter email subject">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" placeholder="Write your message here..." rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
+
+
+        <button id="topBtn" onclick="scrollToTop()">↑</button>
+        <script src="script.js"></script>
+        <footer>
+            <div class="social-footer">
+                <a href="https://www.facebook.com/harshitha.dhanpal"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox"><i class="fab fa-google"></i></a>
+                <a href="https://www.linkedin.com/in/harshitha-dhanpal-896987286"><i
+                        class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p style="color: white;">&copy; 2025 Harshitha Dhanpal. All rights reserved.</p>
+        </footer>
+
+</body>
+
+</html>
