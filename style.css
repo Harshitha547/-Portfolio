@@ -1,4 +1,4 @@
- /* General Reset */
+/* ========== General Reset ========== */
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
@@ -7,7 +7,7 @@ body {
   color: #fff;
 }
 
-/* Navigation Bar */
+/* ========== Navigation ========== */
 nav {
   display: flex;
   justify-content: space-between;
@@ -35,10 +35,6 @@ nav ul {
   gap: 25px;
 }
 
-nav ul li {
-  display: inline;
-}
-
 nav ul li a {
   text-decoration: none;
   color: white;
@@ -51,15 +47,14 @@ nav ul li a.active {
   text-decoration: underline;
 }
 
-/* Hero Section (Updated) */
-/* Hero Section (Updated) */
+/* ========== Hero Section ========== */
 .hero-section {
-  background: #181818; /* Dark background */
-  padding: 100px 20px; /* Adjust padding */
+  background: #181818;
+  padding: 100px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: calc(100vh - 60px); /* Adjust for navigation height */
+  min-height: calc(100vh - 60px);
   text-align: center;
 }
 
@@ -70,13 +65,13 @@ nav ul li a.active {
 }
 
 .profile-image {
-  width: 200px; /* Increased width */
-  height: 200px; /* Increased height */
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   overflow: hidden;
   margin-bottom: 20px;
-  border: 5px solid cyan; /* Changed border color and increased thickness */
-  box-shadow: 0 0 20px cyan; /* Added a subtle shadow */
+  border: 5px solid cyan;
+  box-shadow: 0 0 20px cyan;
 }
 
 .profile-image img {
@@ -85,17 +80,15 @@ nav ul li a.active {
   object-fit: cover;
 }
 
-/* ... rest of your CSS ... */
 .hero-name {
-  font-size: 2.8em; /* Slightly larger name */
+  font-size: 2.8em;
   font-weight: bold;
   margin-bottom: 10px;
-  color: #98FB98; /* Teal/Green primary color */
+  color: #98FB98;
 }
 
 .hero-name .gradient-text {
-  /* You can keep the gradient if you like, or adjust the color */
-  color: #a75eff; /* Purple accent color */
+  color: #a75eff;
 }
 
 .hero-roles {
@@ -119,12 +112,11 @@ nav ul li a.active {
 }
 
 .btn {
-  display: inline-block;
   padding: 12px 24px;
   text-decoration: none;
   color: #f0f0f0;
   border-radius: 5px;
-  transition: background-color 0.3s ease;
+  transition: 0.3s ease;
   font-size: 1em;
 }
 
@@ -133,7 +125,7 @@ nav ul li a.active {
 }
 
 .btn.resume {
-  background-color: #6c757d; /* Grayish */
+  background-color: #6c757d;
 }
 
 .btn.github {
@@ -159,7 +151,7 @@ nav ul li a.active {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: #98FB98; /* Matching primary color */
+  background-color: #98FB98;
   margin-right: 8px;
 }
 
@@ -181,13 +173,14 @@ nav ul li a.active {
 }
 
 .developer {
-  background-color: #5bc0de; /* Light blue */
+  background-color: #5bc0de;
 }
 
 .security {
-  background-color: #d9534f; /* Reddish */
+  background-color: #d9534f;
 }
-/* About Section */
+
+/* ========== About Section ========== */
 .about {
   background-color: #1a1a1a;
   padding: 80px 10%;
@@ -223,29 +216,17 @@ nav ul li a.active {
 .about-card h3 {
   color: cyan;
   margin-bottom: 10px;
-  font-size: 20px;
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.about-card h3 i {
-  font-size: 24px;
+.about-card p {
+  color: #ddd;
 }
 
-.about-card p {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #ddd;
-  margin-bottom: 0;
-}
-education-zigzag {
-  background-color: #1a1a1a;
-  padding: 60px 10%;
-  color: white;
-  text-align: center;
-}
-education-zigzag {
+/* ========== Education Zigzag ========== */
+.education-zigzag {
   background-color: #1a1a1a;
   padding: 60px 10%;
   color: white;
@@ -264,7 +245,6 @@ education-zigzag {
   margin: auto;
 }
 
-/* Vertical line in center */
 .timeline-zigzag::after {
   content: '';
   position: absolute;
@@ -272,36 +252,23 @@ education-zigzag {
   background-color: cyan;
   top: 0;
   bottom: 0;
-  left: 30px; /* Changed from 50% to fixed value */
-  margin-left: 0; /* Removed margin-left */
+  left: 30px;
 }
 
-/* Timeline block containers */
 .container {
   padding: 20px 30px;
   position: relative;
   background: inherit;
-  width: 100%; /* Changed from 50% to 100% */
-  margin-left: 0; /*added*/
+  width: 100%;
+  margin-left: 0;
 }
 
-/* Left containers */
-.container.left {
-  left: 0;
-}
-
-/* Right containers */
-.container.right {
-  left: 0; /* Changed from 50% to 0 */
-}
-
-/* Circles on timeline */
 .container::before {
   content: "";
   position: absolute;
   width: 20px;
   height: 20px;
-  left: 20px; /* Changed from -10px to 20px */
+  left: 20px;
   background-color: cyan;
   border: 4px solid #fff;
   top: 20px;
@@ -309,66 +276,45 @@ education-zigzag {
   z-index: 1;
 }
 
-.container.right::before {
-  left: 20px; /* Ensure circle is at the same position */
-  right: auto;
-}
-
-/* Card content */
 .content {
   padding: 20px 25px;
   background-color: #222;
-  position: relative;
   border-radius: 8px;
   box-shadow: 0 0 10px cyan;
   text-align: left;
-  transition: 0.3s ease;
-  margin-left: 50px; /* Added margin to push content to the right of circle*/
+  margin-left: 50px;
 }
 
 .content h3 {
-  margin: 0 0 10px;
   color: cyan;
-  font-size: 20px;
 }
 
 .content span {
   font-size: 14px;
   color: #aaa;
-  display: block;
-  margin-bottom: 10px;
 }
 
 .content p {
-  margin: 0;
-  font-size: 15px;
   color: #ddd;
 }
 
-/* Responsive Design */
+/* Responsive Timeline */
 @media screen and (max-width: 768px) {
   .timeline-zigzag::after {
-      left: 90px;
+    left: 90px;
   }
-
   .container {
-      width: 100%;
-      padding-left: 120px;
-      padding-right: 25px;
+    padding-left: 120px;
   }
-
-  .container.right {
-      left: 0%;
+  .container::before {
+    left: 60px;
   }
-
-  .container.left::before,
-  .container.right::before {
-      left: 60px;
-  }
-  .content{
-      margin-left: 100px;
+  .content {
+    margin-left: 100px;
   }
 }
+
+/* ========== Experience Section ========== */
 .experience {
   background: #1a1a1a;
   padding: 60px 10%;
@@ -394,25 +340,8 @@ education-zigzag {
   padding: 25px;
   width: 300px;
   box-shadow: 0 0 12px cyan;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: 0.3s ease;
   text-align: center;
-}
-
-.exp-card i {
-  font-size: 40px;
-  color: cyan;
-  margin-bottom: 15px;
-}
-
-.exp-card h3 {
-  font-size: 22px;
-  color: white;
-  margin-bottom: 10px;
-}
-
-.exp-card p {
-  font-size: 15px;
-  color: #ccc;
 }
 
 .exp-card:hover {
@@ -424,15 +353,24 @@ education-zigzag {
   border: 2px solid cyan;
   background: #2c2c2c;
 }
-/* ... your existing CSS ... */
 
-/* ... your existing CSS ... */
+.exp-card i {
+  font-size: 40px;
+  color: cyan;
+}
 
-/* Skills Section */
+.exp-card h3 {
+  color: white;
+}
+
+.exp-card p {
+  color: #ccc;
+}
+
+/* ========== Skills Section ========== */
 .skills {
   background-color: #1a1a1a;
   padding: 60px 10%;
-  color: white;
   text-align: center;
 }
 
@@ -440,10 +378,6 @@ education-zigzag {
   font-size: 32px;
   color: cyan;
   margin-bottom: 30px;
-}
-
-.skills h2 i {
-  margin-right: 10px;
 }
 
 .skills-container {
@@ -459,46 +393,39 @@ education-zigzag {
   border-radius: 12px;
   box-shadow: 0 0 10px cyan;
   text-align: left;
-  min-width: 200px; /* Adjust width as needed */
-  display: flex; /* Enable flexbox for vertical alignment */
-  flex-direction: column; /* Arrange items vertically */
-  gap: 10px; /* Spacing between skill tags */
-}
-
-.skill-category h3 {
-  color: white;
-  margin-bottom: 10px;
-  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .skill-tag {
-  display: inline-block;
   background-color: #333;
   color: #eee;
   padding: 8px 15px;
   border-radius: 8px;
   font-size: 16px;
-  margin-right: 0; /* Remove right margin for vertical layout */
-  margin-bottom: 5px; /* Add bottom margin for spacing */
 }
 
-/* Projects Section */
+/* ========== Projects Section ========== */
 .projects {
   background-color: #181818;
   padding: 50px 10%;
 }
+
 .projects h2 {
   text-align: center;
   font-size: 32px;
   color: cyan;
   margin-bottom: 40px;
 }
+
 .project-cards {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .project-card {
   background: #2a2a2a;
   padding: 20px;
@@ -507,42 +434,50 @@ education-zigzag {
   box-shadow: 0 0 10px cyan;
   transition: 0.3s;
 }
+
 .project-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 0 20px cyan;
 }
+
 .project-card h3 {
   color: cyan;
 }
+
 .project-card p {
   color: #bbb;
 }
 
-/* Contact Section */
+/* ========== Contact Section ========== */
 .contact {
   padding: 50px 10%;
   background-color: #1a1a1a;
   color: white;
   text-align: center;
 }
+
 .contact h2 {
   font-size: 30px;
   margin-bottom: 30px;
 }
+
 .contact-form {
   max-width: 600px;
   margin: 0 auto;
   text-align: left;
 }
+
 .form-group {
   margin-bottom: 20px;
 }
+
 .form-group label {
   display: block;
-  margin-bottom: 5px;
   color: cyan;
   font-weight: bold;
+  margin-bottom: 5px;
 }
+
 .form-group input,
 .form-group textarea {
   width: 100%;
@@ -553,34 +488,36 @@ education-zigzag {
   border-radius: 5px;
   font-size: 16px;
 }
+
 .form-group input:focus,
 .form-group textarea:focus {
-  outline: none;
   border-color: cyan;
+  outline: none;
 }
+
 .contact-form .btn {
-  display: block;
   width: 100%;
   padding: 12px;
   background: cyan;
-  border: none;
   color: black;
   font-size: 18px;
+  border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background 0.3s ease;
 }
+
 .contact-form .btn:hover {
   background: #00bcd4;
 }
 
-
-/* Footer */
+/* ========== Footer ========== */
 footer {
-  background-color: #121212; /* Changed to match page background */
+  background-color: #121212;
+  padding: 10px;
   text-align: center;
-
- padding: 3px 10px}
+  color: white;
+}
 
 .social-footer i {
   padding: 15px;
@@ -589,12 +526,12 @@ footer {
   text-align: center;
   margin: 5px;
   border-radius: 50%;
-  background-color: #444;
-  color: white;
-  transition: transform 0.3s ease;
+  background-color: #333;
+  color: cyan;
+  transition: 0.3s ease;
 }
 
 .social-footer i:hover {
-  background-color: #007bb5;
-  transform: scale(1.1);
+  background-color: cyan;
+  color: black;
 }
